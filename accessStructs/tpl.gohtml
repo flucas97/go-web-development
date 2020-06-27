@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cannabis</title>
+    </head>
+    <body>
+        <ul>
+            {{ range $i , $cannabis := . }}
+            <li> Name: {{ $cannabis.Name }} </li>
+            <li> THC: {{ $cannabis.Thc }}  </li>
+            {{ end }}
+        </ul>
+    </body>
+</html>
