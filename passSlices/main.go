@@ -14,7 +14,7 @@ func init() {
 
 func main() {
 
-	sages := []string{"Go", "Ruby", "React", "Typescript"}
+	languages := []string{"Go", "Ruby", "React", "Typescript"}
 
 	err := tpl.Execute(os.Stdout, sages)
 	if err != nil {
