@@ -16,7 +16,7 @@ func main() {
 
 	languages := []string{"Go", "Ruby", "React", "Typescript"}
 
-	err := tpl.Execute(os.Stdout, sages)
+	err := tpl.Execute(os.Stdout, languages)
 	if err != nil {
 		log.Fatalln(err)
 	}
