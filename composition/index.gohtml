@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> SecretAgent</title>
+    </head>
+    <body>
+        <ul>
+            {{ $person := . }}
+            <li> Name: {{ $person.Name }} </li>
+            <li> Lastname: {{ $person.Lastname }}  </li>
+            {{ if $person.LicenseToKill }}
+                <h2> I can do this job. </h2>
+            {{ end }}
+        </ul>
+    </body>
+</html>
