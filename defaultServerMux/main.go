@@ -2,6 +2,7 @@ package main
 
 import (
 	"io"
+	"log"
 	"net/http"
 )
 
@@ -18,5 +19,5 @@ func main() {
 	http.HandleFunc("/noway", noway)
 
 	// passing nil to use Handle and HandleFunc from http package
-	http.ListenAndServe(":8080", nil) // default server mux
+	log.Fatal(http.ListenAndServe(":8080", nil)) // default server mux
 }
